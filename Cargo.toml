@@ -1,0 +1,19 @@
+[package]
+name = "rweb-server"
+version = "0.0.0"
+authors = ["tkeiyama <thomas18thx@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "main"
+path = "server/main.rs"
+
+[dependencies]
+actix-web = "3.3.2"
+actix-cors = "0.5.4"
+diesel = {version = "1.4.6", features = ["postgres", "r2d2"]}
+serde = "1.0.126"
+dotenv = "0.15.0"
+derive_more = "0.99.13"
